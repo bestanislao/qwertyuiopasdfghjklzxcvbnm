@@ -34,6 +34,8 @@ namespace UNBUM.WEBSERVICE.Controllers
         public int InsertCustomerCharges([FromUri]CustomerChargesVM customerChargesVM)
         {
             var request = Mapper.Map<CustomerChargesVM, CustomerCharges>(customerChargesVM);
+            request.Status = 1;
+            request.DateModified = DateTime.Now;
             return _customerTransactionBL.InsertCustomerCharges(request);
         }
 

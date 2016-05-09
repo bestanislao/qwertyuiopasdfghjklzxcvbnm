@@ -41,9 +41,9 @@ namespace UNBUM.DAO.Workflow
             return requestService.Id;
         }
 
-        public List<RequestService> GetRequestService(int serviceId, int status)
+        public List<RequestService> GetRequestService(int serviceType, int status)
         {
-            return _requestServiceRepository.Get(x => x.ServiceId == serviceId && x.Status == status);
+            return _requestServiceRepository.Get(x => x.ServiceType == serviceType && x.Status == status);
         }
 
         public int UpdateRequestServiceStatus(RequestService requestService)

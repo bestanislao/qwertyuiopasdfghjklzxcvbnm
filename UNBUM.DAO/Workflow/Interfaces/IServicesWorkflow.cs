@@ -12,7 +12,7 @@ namespace UNBUM.DAO.Workflow.Interfaces
         List<Services> GetSearchCategoryByServiceIDLatLongLang(int serviceTypeId, string lat, string lng);
         List<Services> GetSearchCategoryByServiceID(int serviceTypeId);
         int InsertRequestService(RequestService requestService);
-        List<RequestService> GetRequestService(int serviceId, int status);
+        List<RequestService> GetRequestService(int serviceType, int status);
         int UpdateRequestServiceStatus(RequestService requestService);
     }
 }

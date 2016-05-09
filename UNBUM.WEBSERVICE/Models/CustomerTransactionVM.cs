@@ -12,5 +12,6 @@ namespace UNBUM.WEBSERVICE.Models
         public int CustomerUserId { get; set; }
         public string CustomerNotes { get; set; }
         public DateTime DateModified { get; set; }
+        public string ServiceNotes { get; set; }
     }
 }

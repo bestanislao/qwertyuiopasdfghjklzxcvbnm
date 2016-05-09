@@ -13,7 +13,7 @@ namespace UNBUM.BL.ServicesBL
         List<Services> GetSearchCategoryByServiceID(int serviceTypeId);
         Services GetSearchServiceByServiceTypeIdAndAddress(int serviceId, string address);
         int InsertRequestService(RequestService requestService);
-        List<RequestService> GetRequestService(int serviceId, int status);
+        List<RequestService> GetRequestService(int serviceType, int status);
         int UpdateRequestServiceStatus(RequestService requestService);
     }
 }

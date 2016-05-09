@@ -11,6 +11,10 @@ namespace UNBUM.CORE.Initializer
 {
     public class DBInitializer : CreateDatabaseIfNotExists<UNBUMDbContext>
     {
+        public DBInitializer()
+        {
+
+        }
         protected override void Seed(UNBUMDbContext context)
         {
             //List<CustomerCharges> c = new List<CustomerCharges>();

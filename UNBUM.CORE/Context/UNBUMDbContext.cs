@@ -12,12 +12,13 @@ using UNBUM.CORE.Types;
 
 namespace UNBUM.CORE.Context
 {
-    public class UNBUMDbContext : DbContext
+    public class UNBUMDbContext :  DbContext
     {
         public object CustomerTransaction { get; internal set; }
 
         public UNBUMDbContext() : base("UNBUMDbContext")
         {
+        
             Database.SetInitializer<UNBUMDbContext>(new DBInitializer());
         }
         

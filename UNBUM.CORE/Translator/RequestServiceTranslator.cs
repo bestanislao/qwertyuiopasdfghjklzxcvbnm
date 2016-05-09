@@ -14,9 +14,6 @@ namespace UNBUM.CORE.Translator
             RequestService forUpdate = new RequestService();
             forUpdate.Id = fromDB.Id;
             forUpdate.DateCreated = fromDB.DateCreated;
-            forUpdate.ServiceId = fromDB.ServiceId;
-            forUpdate.Customer = fromDB.Customer;
-            forUpdate.Address = fromDB.Address;
             forUpdate.Status = update.Status;
             forUpdate.DateModified = DateTime.Now;
             forUpdate.ModifiedBy = update.ModifiedBy;
