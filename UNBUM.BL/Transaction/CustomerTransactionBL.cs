@@ -44,5 +44,10 @@ namespace UNBUM.BL.Transaction
         {
             return _customerTransactionWorkflow.UpdateCustomerTransaction(customerTransaction);
         }
+
+        public CustomerTransaction GetCustomerTransactionById(int id)
+        {
+            return _customerTransactionWorkflow.GetCustomerTransactionById(id);
+        }
     }
 }

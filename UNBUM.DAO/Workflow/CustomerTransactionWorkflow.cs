@@ -20,6 +20,11 @@ namespace UNBUM.DAO.Workflow
             _unitOfWork = unitOfWork;
         }
 
+        public CustomerTransaction GetCustomerTransactionById(int id)
+        {
+            return _customerTransactionRepository.GetById(id);
+        }
+
         public CustomerTransaction GetCustomerTransactionByReferenceNumber(string referenceNumber)
         {
             return _customerTransactionRepository.Find(x => x.ReferenceNumber == referenceNumber, y=>y.CustomerCharges).FirstOrDefault();

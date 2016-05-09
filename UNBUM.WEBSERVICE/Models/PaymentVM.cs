@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace UNBUM.CORE.Types
+namespace UNBUM.WEBSERVICE.Models
 {
-    public class Payment : EntityBase<int>
+    public class PaymentVM
     {
+        public int Id { get; set; }
         public int CustomerTransactionId { get; set; }
         public decimal CustomerAmount { get; set; }
         public decimal TotalAmount { get; set; }

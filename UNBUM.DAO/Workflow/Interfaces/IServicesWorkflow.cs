@@ -14,5 +14,6 @@ namespace UNBUM.DAO.Workflow.Interfaces
         int InsertRequestService(RequestService requestService);
         List<RequestService> GetRequestService(int serviceType, int status);
         int UpdateRequestServiceStatus(RequestService requestService);
+        RequestService GetRequestServiceById(int id);
     }
 }

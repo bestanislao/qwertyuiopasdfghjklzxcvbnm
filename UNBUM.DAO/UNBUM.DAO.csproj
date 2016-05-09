@@ -65,10 +65,12 @@
     <Compile Include="Repositories\Interfaces\ICustomerChargesRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICustomerTransactionRepository.cs" />
     <Compile Include="Repositories\Interfaces\IApplicationUserRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IPaymentRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRequestServiceRepository.cs" />
     <Compile Include="Repositories\Interfaces\IServicesRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISystemParameterRepository.cs" />
     <Compile Include="Repositories\Interfaces\IUserProfileRepository.cs" />
+    <Compile Include="Repositories\PaymentRepository.cs" />
     <Compile Include="Repositories\RequestServiceRepository.cs" />
     <Compile Include="Repositories\ServicesRepository.cs" />
     <Compile Include="Repositories\SystemParameterRepository.cs" />
@@ -79,8 +81,10 @@
     <Compile Include="Workflow\CustomerTransactionWorkflow.cs" />
     <Compile Include="Workflow\Interfaces\ICustomerChargesWorkflow.cs" />
     <Compile Include="Workflow\Interfaces\ICustomerTransactionWorkflow.cs" />
+    <Compile Include="Workflow\Interfaces\IPaymentWorkflow.cs" />
     <Compile Include="Workflow\Interfaces\IServicesWorkflow.cs" />
     <Compile Include="Workflow\Interfaces\IUserProfileWorkflow.cs" />
+    <Compile Include="Workflow\PaymentWorkflow.cs" />
     <Compile Include="Workflow\ServicesWorkflow.cs" />
     <Compile Include="Workflow\UserProfileWorkflow.cs" />
   </ItemGroup>

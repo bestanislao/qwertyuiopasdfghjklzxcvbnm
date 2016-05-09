@@ -12,6 +12,7 @@ namespace UNBUM.DAO.Workflow.Interfaces
         int InsertCustomerTransaction(CustomerTransaction customerTransaction);
         int UpdateCustomerTransaction(CustomerTransaction customerTransaction);
         CustomerTransaction GetCustomerTransactionByReferenceNumber(string referenceNumber);
+        CustomerTransaction GetCustomerTransactionById(int id);
 
     }
 }

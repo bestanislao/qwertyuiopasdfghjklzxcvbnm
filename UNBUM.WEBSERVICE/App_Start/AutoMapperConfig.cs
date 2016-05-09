@@ -24,6 +24,8 @@ namespace UNBUM.WEBSERVICE.App_Start
                 cfg.CreateMap<CustomerTransactionVM, CustomerTransaction>();
                 cfg.CreateMap<CustomerTransaction, CustomerTransactionVM>();
                 cfg.CreateMap<CustomerChargesVM, CustomerCharges>();
+                cfg.CreateMap<Payment, PaymentVM>();
+                cfg.CreateMap<PaymentVM, Payment>();
                 cfg.CreateMap<CustomerCharges, CustomerChargesVM>();
             });
         }

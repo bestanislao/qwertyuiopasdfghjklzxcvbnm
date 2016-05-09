@@ -40,6 +40,7 @@ namespace UNBUM.CORE.Context
             modelBuilder.Entity<Services>().ToTable("Services");
             modelBuilder.Entity<RequestService>().ToTable("RequestService");
             modelBuilder.Entity<SystemParameter>().ToTable("SystemParameter");
+            modelBuilder.Entity<Payment>().ToTable("Payment");
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
             Database.SetInitializer(new DBInitializer());

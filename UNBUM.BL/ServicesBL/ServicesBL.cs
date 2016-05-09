@@ -21,6 +21,11 @@ namespace UNBUM.BL.ServicesBL
             return _servicesWorkflow.GetRequestService(serviceType, status);
         }
 
+        public RequestService GetRequestServiceById(int id)
+        {
+            return _servicesWorkflow.GetRequestServiceById(id);
+        }
+
         public List<Services> GetSearchCategoryByServiceID(int serviceTypeId)
         {
             return _servicesWorkflow.GetSearchCategoryByServiceID(serviceTypeId);

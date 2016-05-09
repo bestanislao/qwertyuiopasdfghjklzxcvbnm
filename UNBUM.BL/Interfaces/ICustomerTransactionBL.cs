@@ -14,5 +14,6 @@ namespace UNBUM.BL.Interfaces
         int UpdateCustomerCharges(CustomerCharges customerCharges);
         int UpdateCustomerTransaction(CustomerTransaction customerTransaction);
         CustomerTransaction GetCustomerTransactionByReferenceNumber(string referenceNumber);
+        CustomerTransaction GetCustomerTransactionById(int id);
     }
 }

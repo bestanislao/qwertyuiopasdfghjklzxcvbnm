@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Interfaces\ICustomerTransactionBL.cs" />
+    <Compile Include="PaymentBL\IPaymentBL.cs" />
+    <Compile Include="PaymentBL\PaymentBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServicesBL\IServicesBL.cs" />
     <Compile Include="ServicesBL\ServicesBL.cs" />

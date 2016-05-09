@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UNBUM.BL.Interfaces;
+using UNBUM.BL.PaymentBL;
 using UNBUM.BL.ServicesBL;
 using UNBUM.BL.Transaction;
 using UNBUM.BL.UserBusinessLayer;
@@ -33,8 +34,8 @@ namespace UNBUM.STARTUP
             container.RegisterType<ICustomerTransactionRepository, CustomerTransactionRepository>(new ContainerControlledLifetimeManager());
             container.RegisterType<ISystemParameterRepository, SystemParameterRepository>(new ContainerControlledLifetimeManager());
             container.RegisterType<IRequestServiceRepository, RequestServiceRepository>(new ContainerControlledLifetimeManager());
-        
-            
+            container.RegisterType<IPaymentRepository, PaymentRepository>(new ContainerControlledLifetimeManager());
+
             #endregion End Repository
 
             #region Workflow
@@ -42,12 +43,14 @@ namespace UNBUM.STARTUP
             container.RegisterType<IServicesWorkflow, ServicesWorkflow>(new ContainerControlledLifetimeManager());
             container.RegisterType<ICustomerTransactionWorkflow, CustomerTransactionWorkflow>(new ContainerControlledLifetimeManager());
             container.RegisterType<ICustomerChargesWorkflow, CustomerChargesWorkflow>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IPaymentWorkflow, PaymentWorkflow>(new ContainerControlledLifetimeManager());
             #endregion End Workflow
 
             #region BusinessLayer
             container.RegisterType<IUserProfileBL, UserProfileBL>(new ContainerControlledLifetimeManager());
             container.RegisterType<IServicesBL, ServicesBL>(new ContainerControlledLifetimeManager());
             container.RegisterType<ICustomerTransactionBL, CustomerTransactionBL>(new ContainerControlledLifetimeManager());
+            container.RegisterType<IPaymentBL, PaymentBL>(new ContainerControlledLifetimeManager());
             #endregion End BusinessLayer
             return container;
         }

@@ -48,12 +48,15 @@ namespace UNBUM.DAO.Workflow
 
         public int UpdateRequestServiceStatus(RequestService requestService)
         {
-            RequestService forUpdate = _requestServiceRepository.GetById(requestService.Id);           
+            RequestService forUpdate = _requestServiceRepository.GetById(requestService.Id);
             _requestServiceRepository.Update(RequestServiceTranslator.UpdateRequestServiceStatusTranslator(requestService, forUpdate));
             _unitOfWork.Save();
             return requestService.Id;
         }
 
-       
+        public RequestService GetRequestServiceById(int id)
+        {
+            return _requestServiceRepository.GetById(id);
+        }
     }
 }

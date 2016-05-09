@@ -266,6 +266,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerTransactionController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -278,6 +279,7 @@
     <Compile Include="Models\CustomerChargesVM.cs" />
     <Compile Include="Models\CustomerTransactionVM.cs" />
     <Compile Include="Models\LoginRequest.cs" />
+    <Compile Include="Models\PaymentVM.cs" />
     <Compile Include="Models\RequestServiceVM.cs" />
     <Compile Include="Models\ServicesVM.cs" />
     <Compile Include="Models\UserProfileVM.cs" />
